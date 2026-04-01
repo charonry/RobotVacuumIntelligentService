@@ -2,7 +2,7 @@ collection_name: robot_vacuum_intelligent_service
 persist_directory: db/chroma_db
 k: 3
 data_path: data
-md5_hex_store: md5.text
+md5_hex_store: rag/md5.text
 allow_knowledge_file_type: ["txt", "pdf"]
 
 chunk_size: 200
