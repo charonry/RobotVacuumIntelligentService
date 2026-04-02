@@ -28,7 +28,7 @@ def monitor_tool(request:ToolCallRequest,
         logger.error(f"工具{request.tool_call['name']}调用失败，原因：{str(e)}")
         raise e
 
-
+@before_model
 def log_before_model(state:AgentState,runtime:Runtime):
     logger.info(f"[log_before_model]即将调用模型，带有{len(state['messages'])}条消息。")
     logger.debug(f"[log_before_model]{type(state['messages'][-1]).__name__}|{state['messages'][-1].content.strip()}")
