@@ -59,7 +59,7 @@
 
 ### 1. 环境要求
 
-- Python 3.9+
+- Python 3.10+
 - 阿里云 DashScope API Key
 
 ### 2. 安装依赖
