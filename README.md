@@ -143,6 +143,9 @@ for chunk in agent.execute_stream("小户型适合什么扫地机器人？"):
 ### 生成使用报告
 
 ```python
+from agent.react_agent import ReActAgent
+
+agent = ReActAgent()
 for chunk in agent.execute_stream("给我生成我的使用报告"):
     print(chunk, end="", flush=True)
 ```
